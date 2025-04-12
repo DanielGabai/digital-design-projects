@@ -60,4 +60,4 @@ This counter is a fundamental sequential logic circuit and forms the basis for m
 ---
 
 ## Tools Used
-- Falstad Circuit Simulator (offline version)
+- Falstad Circuit Simulator
