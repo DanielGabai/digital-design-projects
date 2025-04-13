@@ -5,7 +5,7 @@ This repository contains a collection of digital logic projects built using Fals
 
 These projects were created to explore and practice hardware design fundamentals in preparation for ASIC/FPGA development and digital system design.
 
-The projects progress from basic combinational logic to sequential circuits, and ultimately to a custom instruction-driven datapath — modeling the core structure of a CPU.
+The projects progress from basic combinational logic to sequential circuits, and ultimately to a custom instruction-driven CPU with automated execution.
 
 ---
 
@@ -51,17 +51,25 @@ The projects progress from basic combinational logic to sequential circuits, and
 ---
 
 ### `control-logic/` — 4-Bit Datapath with Custom Instruction Control
-- Full instruction-driven control of datapath
+- Instruction-driven control of datapath
 - 4-bit instruction format:
   - `[3:2]` ALU OpCode
   - `[1]` Register Input Select (Data In vs ALU Out)
   - `[0]` Load Enable
 - Manual instruction loading via switches
 - Demonstrates control unit logic and instruction execution cycle
-- Models the architecture of a simple processor core
+
+---
+
+### `cpu-execution/` — Program Counter CPU with Automated Instruction Execution
+- 3-bit Program Counter increments automatically on every clock cycle
+- MUX-based ROM stores a hardcoded instruction sequence
+- Fully automated instruction execution with Register and ALU operations
+- Models a simple CPU architecture with synchronous design principles
+- Final project in this repository
 
 ---
 
 ## Author
 Daniel Gabai  
-Electrical & Computer Engineering Student  
+Electrical & Computer Engineering Student
